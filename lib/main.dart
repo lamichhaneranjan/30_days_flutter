@@ -5,14 +5,16 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Container(
-            child: Container(
-      child: Text("Welcome to 30 days of flutter"),
-    )));
+      home: Material(
+        child: Center(
+          child: Container(
+            child: Text("Welcome to 30 days of flutter"),
+          ),
+        ),
+      ),
+    );
   }
 }
